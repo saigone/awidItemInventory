@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <!-- LinearLayout預設為水平 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/awid_asia" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="@color/slategray"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/attention" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/scan_attention"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/bluetooth_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/skyblue" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/slategray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btn_scan_bluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_9patchbutton"
+            android:drawableLeft="@drawable/search"
+            android:onClick="onclick"
+            android:text="@string/scan_bluetooth"
+            android:textColor="@color/gold" />
+
+        <Button
+            android:id="@+id/btn_offline_bluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_9patchbutton"
+            android:drawableLeft="@drawable/offine_32"
+            android:onClick="onclick"
+            android:text="@string/offline"
+            android:textColor="@color/gold" />
+
+        <Button
+            android:id="@+id/btn_close_program"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_9patchbutton"
+            android:drawableLeft="@drawable/close"
+            android:onClick="onclick"
+            android:text="@string/over"
+            android:textColor="@color/gold"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</LinearLayout>

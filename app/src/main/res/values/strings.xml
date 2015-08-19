@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AWIDasia 標籤管理</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">設定</string>
+    <string name="version">版本</string>
+    <string name="scan_attention">請按下掃描藍芽來搜尋藍芽裝置</string>
+    <string name="open_bluetooth">啟動藍牙</string>
+    <string name="scan_bluetooth">掃描藍芽</string>
+    <string name="offline">離線作業</string>
+    <string name="over">關閉程式</string>
+    <string name="awid">AWID</string>
+    <string name="photos">相片</string>
+    <string name="epc">EPC</string>
+    <string name="tid">TID</string>
+    <string name="manager">管理者</string>
+    <string name="manager_unit">管理單位</string>
+    <string name="save">儲存</string>
+    <string name="property_index">資產編號</string>
+    <string name="property_type">資產類型</string>
+    <string name="property_name">資產名稱</string>
+    <string name="mfc_name">製造商</string>
+    <string name="model_type">模組類型</string>
+    <string name="serial_number">製造序號</string>
+    <string name="storage_location">放置地點</string>
+    <string name="inventory_count">數量</string>
+    <string name="date">日期</string>
+    <string name="money">金額</string>
+    <string name="unit_managing">單位</string>
+    <string name="usage_states">狀態</string>
+    <string name="accounts">帳戶</string>
+    <string name="manage_check">確定</string>
+    <string name="section">地區</string>
+    <string name="delete">刪除</string>
+    <string name="search">搜尋</string>
+    <string name="count">數量</string>
+    <string name="number">數量:</string>
+    <string name="sound">音效</string>
+    <string name="inventory">盤點</string>
+    <string name="clear">清除</string>
+    <string name="record">紀錄</string>
+    <string name="tag">標籤</string>
+    <string name="powerLevel">功率設定</string>
+    <string name="confirm">確認</string>
+    <string name="cancel">取消</string>
+    <string name="readerpower">功率</string>
+    <string name="readerpowervalue">功率值</string>
+    <string name="photograph">照相</string>
+    <string name="focus">焦點</string>
+    <string name="zoom">縮放</string>
+    <string name="returns">返回</string>
+    <string name="searchTag">搜尋標籤</string>
+    <string name="browser">瀏覽器</string>
+    <string name="stop">停止</string>
+    <string name="lock">鎖定</string>
+    <string name="unlock">解鎖</string>
+    <string name="current_power">功率: %1$s</string>
+    <string name="core_version">核心版本: %1$s</string>
+    <string name="mainboard_version">模組版本: %1$s</string>
+    <string name="power_strong">強</string>
+    <string name="power_weak">弱</string>
+    <string name="read_tag">讀取</string>
+
+    <string-array name="managerUnitList">
+        <item>財務部</item>
+        <item>管理部</item>
+        <item>採購部</item>
+        <item>生管部</item>
+        <item>品保部</item>
+        <item>資訊部</item>
+        <item>製造部</item>
+        <item>測試部</item>
+        <item>研發部</item>
+        <item>工程部</item>
+        <item>實驗室</item>
+        <item>銷售部</item>
+        <item>業務部</item>
+        <item>產品研發部</item>
+    </string-array>
+
+    <string-array name="propertyTypeList">
+        <item>辦公設備</item>
+        <item>電腦設備</item>
+        <item>發電設備</item>
+        <item>機械設備</item>
+        <item>製造設備</item>
+        <item>工程設備</item>
+    </string-array>
+
+    <string-array name="UsageStatesList">
+        <item>使用中</item>
+        <item>維修中</item>
+        <item>閒置</item>
+        <item>損壞</item>
+        <item>遺失</item>
+    </string-array>
+
+    <string name="check_exit_programe">離開程式?</string>
+    <string name="check_dialog">訊息框</string>
+    <string name="wait">搜尋中</string>
+    <string name="device_name">名稱: </string>
+    <string name="bluetooth_address">位址: </string>
+    <string name="bluetooth_not_found">附近無藍芽相關設備</string>
+    <string name="bluetooth_connection_failed">藍芽連線失敗</string>
+    <string name="bluetooth_state">藍牙狀態</string>
+    <string name="bluetooth_connecting"> 連線中...</string>
+    <string name="bluetooth_null">這不是HB藍芽設備，請再次搜尋或檢查讀取器設備</string>
+    <string name="reader_info">讀取器資訊</string>
+    <string name="system_setting">讀取器功能</string>
+    <string name="battery">電量</string>
+    <string name="power_setting">功率設定</string>
+    <string name="create_item_data">新增物品功能</string>
+    <string name="search_item">搜尋物品</string>
+    <string name="official_website">官方網站</string>
+    <string name="battery_warning">警告，電量不足，請立刻充電</string>
+    <string name="disconnection">藍芽斷線</string>
+    <string name="unsupport">不支援該項功能</string>
+    <string name="add_item">新增</string>
+    <string name="imports">載入</string>
+    <string name="exports">輸出</string>
+    <string name="export_msg">輸出訊息</string>
+    <string name="save_path">儲存路徑: </string>
+    <string name="wrong_excel_file">EXCEL格式錯誤</string>
+    <string name="check_excel_file">這不是EXCEL檔案</string>
+    <string name="add_failed">新增失敗</string>
+    <string name="add_successfully">新增成功</string>
+    <string name="duplicated_epc">EPC碼重複</string>
+    <string name="basic_column">基本欄位</string>
+    <string name="extended_column">附加欄位</string>
+    <string name="photo_column">照相</string>
+    <string name="lost_column">EPC, TID或資產欄位不可為空白!</string>
+    <string name="using">使用中</string>
+    <string name="no_data">無資料</string>
+    <string name="warnning_dialog">警告視窗</string>
+    <string name="delete_data">刪除資料?</string>
+    <string name="delete_failed">刪除失敗</string>
+    <string name="delete_successfully">刪除成功</string>
+    <string name="no_file">檔案不存在</string>
+    <string name="tag_info">標籤訊息</string>
+    <string name="database">資料庫</string>
+    <string name="stop_inventory">停止盤點</string>
+    <string name="arrange">排列</string>
+    <string name="zero">0</string>
+    <string name="tag_id">標籤</string>
+    <string name="tag_count">數量</string>
+    <string name="tag_name">名稱</string>
+    <string name="tag_state">狀態</string>
+    <string name="total_tag">應盤:</string>
+    <string name="checked_tag">已盤:</string>
+    <string name="error_tag">異常:</string>
+    <string name="read_time">數量</string>
+    <string name="item_name">物品</string>
+    <string name="item_show">顯示</string>
+    <string name="action_settings">設定</string>
+    <string name="upload">上傳</string>
+    <string name="download">下載</string>
+    <string name="upload_success">上傳成功</string>
+    <string name="upload_failed">上傳失敗</string>
+    <string name="update">更新</string>
+    <string name="internet_disconnect">網路並未開啟，請檢查網路連線狀態</string>
+    <string name="close_inventory_status">請關閉盤點動作</string>
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:seekarc="http://schemas.android.com/apk/res/com.emmt.awiditeminventory"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/snow" >
+
+        <TextView
+            android:id="@+id/core_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:text="@string/core_version"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/mainboard_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:text="@string/mainboard_version"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="@color/slategray"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/seekArcContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        android:layout_weight="1" >
+
+        <com.triggertrap.seekarc.SeekArc
+            android:id="@+id/seekArc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="70dp"
+            seekarc:rotation="180"
+            seekarc:startAngle="30"
+            seekarc:sweepAngle="300"
+            seekarc:touchInside="true"/>
+
+        <TextView
+            android:id="@+id/seekArcProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0"
+            android:textSize="40sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_gravity="bottom">
+            <TextView
+                android:id="@+id/seekArcProgress1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:text="@string/power_strong"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/seekArcProgress2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:text="@string/power_weak"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/snow">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="@color/slategray"/>
+
+        <Button
+            android:id="@+id/Btn_powerlevelSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bg_9patchbutton"
+            android:text="@string/confirm"
+            android:textColor="@color/gold" />
+    </LinearLayout>
+
+</LinearLayout>

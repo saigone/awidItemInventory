@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/snow" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutAwidTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/imageViewAwid"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/awid_asia" />
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/awid"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayoutAwidTitle"
+        android:orientation="vertical"
+        android:background="@color/black" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/version"
+            android:textColor="@color/snow"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/snow" >
+            
+            <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="@color/indianred"
+            android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/mainboardVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/indianred"
+                android:textSize="20sp" />
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_powerlevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout_version"
+        android:background="@color/black" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/powerLevel"
+            android:textColor="@color/snow"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/powerlevelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout_powerlevel"
+        android:layout_marginTop="20dp"
+        android:text="@string/readerpower"
+        android:textColor="@color/indianred"
+        android:textSize="20sp" />
+
+    <SeekBar
+        android:id="@+id/SeekBar_powerlevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/powerlevelText"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_toRightOf="@+id/powerlevelText"
+        android:max="255"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/powerValueHigh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SeekBar_powerlevel"
+        android:layout_below="@+id/SeekBar_powerlevel"
+        android:text="0"
+        android:textColor="@color/indianred"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/powerValueLow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/SeekBar_powerlevel"
+        android:layout_below="@+id/SeekBar_powerlevel"
+        android:text="255"
+        android:textColor="@color/indianred"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/powerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/powerValueHigh"
+        android:layout_below="@+id/powerValueHigh"
+        android:text="Hi"
+        android:textColor="@color/indianred"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/powerTitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/powerValueLow"
+        android:layout_below="@+id/powerValueLow"
+        android:text="Low"
+        android:textColor="@color/indianred"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/powerValueTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/powerTitle1"
+        android:layout_marginTop="20dp"
+        android:text="@string/readerpowervalue"
+        android:textColor="@color/indianred"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txt_powerValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/powerValueTitle"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/powerValueTitle"
+        android:text="0"
+        android:textColor="@color/indianred"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_powerlevelbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/powerValueTitle"
+        android:layout_marginTop="20dp"
+        android:gravity="right" >
+
+        <Button
+            android:id="@+id/Btn_powerlevelSubmit"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_9patchbutton"
+            android:text="@string/confirm"
+            android:textColor="@color/gold" />
+
+        <Button
+            android:id="@+id/Btn_powerlevelCancel"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/bg_9patchbutton"
+            android:text="@string/cancel"
+            android:textColor="@color/gold" />
+    </LinearLayout>
+
+</RelativeLayout>

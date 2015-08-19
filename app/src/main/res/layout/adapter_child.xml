@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/MyAdapter_ImageView_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10px" />
+
+    <TextView
+        android:id="@+id/MyAdapter_TextView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15px"
+        android:layout_toRightOf="@id/MyAdapter_ImageView_icon"
+        android:gravity="center_vertical"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/black" />
+    <!-- android:textAppearance="?android:attr/textAppearanceLarge" -->
+    <!-- ?android:attr/listPreferredItemHeight 引用系統的高度 -->
+    <!-- ?android:attr/textAppearanceLarge android內定字型大小 -->
+
+    <TextView
+        android:id="@+id/MyAdapter_TextView_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15px"
+        android:layout_toRightOf="@+id/MyAdapter_TextView_title"
+        android:gravity="center_vertical"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

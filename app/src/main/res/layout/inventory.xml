@@ -1,0 +1,218 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/snow" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutAwidTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageViewAwid"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/awid_asia" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="@color/slategray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/countShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/number"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/editTextCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/txt_current_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/current_power"
+            android:textSize="25sp"/>
+
+        <CheckBox
+            android:id="@+id/check_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:checked="true"
+            android:text="@string/sound"
+            android:textColor="@color/snow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/slategray" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TableLayout
+                android:id="@+id/TableLayout_inventory"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0"
+                android:shrinkColumns="0" >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dip"
+                        android:gravity="center_horizontal"
+                        android:text="@string/tag"
+                        android:textColor="@color/red"
+                        android:background="@color/darkgray"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dip"
+                        android:gravity="center_horizontal"
+                        android:text="@string/read_time"
+                        android:textColor="@color/red"
+                        android:background="@color/darkgray"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+<!--  
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dip"
+                        android:gravity="center_horizontal"
+                        android:text="@string/item_name"
+                        android:textColor="@color/red"
+                        android:background="@color/darkgray"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dip"
+                        android:gravity="center_horizontal"
+                        android:text="@string/item_show"
+                        android:textColor="@color/red"
+                        android:background="@color/darkgray"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/slategray"/>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btn_inventory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_9patchbutton"
+            android:onClick="onclick"
+            android:text="@string/inventory"
+            android:textColor="@color/gold" />
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_9patchbutton"
+            android:onClick="onclick"
+            android:text="@string/clear"
+            android:textColor="@color/gold" />
+
+        <Button
+            android:id="@+id/btn_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_9patchbutton"
+            android:onClick="onclick"
+            android:text="@string/record"
+            android:visibility="gone"
+            android:textColor="@color/gold" />
+
+        <Button
+            android:id="@+id/btn_arrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_9patchbutton"
+            android:onClick="onclick"
+            android:text="@string/arrange"
+            android:visibility="gone"
+            android:textColor="@color/gold" />
+
+        <Button
+            android:id="@+id/btn_json_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_9patchbutton"
+            android:onClick="onclick"
+            android:text="@string/upload"
+            android:visibility="gone"
+            android:textColor="@color/gold" />
+    </LinearLayout>
+
+</LinearLayout>

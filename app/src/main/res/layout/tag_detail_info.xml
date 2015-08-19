@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/slategray"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/inventory_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/gainsboro" />
+
+    <TextView
+        android:id="@+id/inventory_tid"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/gainsboro" />
+
+    <TextView
+        android:id="@+id/inventory_propertyName"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/gainsboro" />
+
+    <TextView
+        android:id="@+id/inventory_manager"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/gainsboro" />
+
+    <TextView
+        android:id="@+id/inventory_manageUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/gainsboro" />
+
+    <TextView
+        android:id="@+id/inventory_storageLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/gainsboro" />
+
+    <TextView
+        android:id="@+id/inventory_usageState"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/gainsboro" />
+
+    <ImageView
+        android:id="@+id/inventory_tagPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="center"
+        android:visibility="gone"/>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/gainsboro" />
+
+</LinearLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="@string/property_name"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        
+        <AutoCompleteTextView
+            android:id="@+id/txt_property_preselection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:textColor="@color/red"
+            android:textCursorDrawable="@null"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btn_search_property"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_9patchbutton"
+            android:onClick="onclick"
+            android:text="@string/browser"
+            android:textColor="@color/gold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:text="@string/tag"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/txt_epc_preselection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:textColor="@color/red"
+            android:textCursorDrawable="@null"
+            android:textSize="25dp" />
+
+        <!-- 排版好看用 -->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/browser"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
+
+        <Button
+            android:id="@+id/btn_lock_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_9patchbutton"
+            android:onClick="onclick"
+            android:text="@string/lock"
+            android:textColor="@color/gold" />
+
+        <Button
+            android:id="@+id/btn_clean_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/bg_9patchbutton"
+            android:onClick="onclick"
+            android:text="@string/clear"
+            android:textColor="@color/gold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="@color/slategrey" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableLayout
+                android:id="@+id/pre_selection_tablelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0" >
+
+                <!-- 制定哪一列為擴展列 -->
+
+                <TableRow
+                    android:layout_margin="1dip"
+                    android:background="@color/tomato" >
+
+                    <TextView
+                        android:layout_margin="2dip"
+                        android:background="@color/goldenrod"
+                        android:gravity="center_horizontal"
+                        android:text="@string/tag"
+                        android:textColor="@color/darkred"
+                        android:textSize="20dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_margin="2dip"
+                        android:background="@color/goldenrod"
+                        android:gravity="center_horizontal"
+                        android:text="@string/property_name"
+                        android:textColor="@color/darkred"
+                        android:textSize="20dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_margin="2dip"
+                        android:background="@color/goldenrod"
+                        android:gravity="center_horizontal"
+                        android:text="@string/count"
+                        android:textColor="@color/darkred"
+                        android:textSize="20dip"
+                        android:textStyle="bold" />
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

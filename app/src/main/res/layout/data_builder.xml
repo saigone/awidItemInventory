@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/awid_asia" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="@color/slategray"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/item_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/slategray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/btn_add_new_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_9patchbutton"
+            android:drawableLeft="@drawable/add"
+            android:onClick="onclick"
+            android:text="@string/add_item"
+            android:textColor="@color/gold" />
+
+        <Button
+            android:id="@+id/btn_import_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_9patchbutton"
+            android:drawableLeft="@drawable/imports"
+            android:onClick="onclick"
+            android:text="@string/imports"
+            android:textColor="@color/gold" />
+
+        <Button
+            android:id="@+id/btn_export_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_9patchbutton"
+            android:drawableLeft="@drawable/export"
+            android:onClick="onclick"
+            android:text="@string/exports"
+            android:textColor="@color/gold" />
+
+        <Button
+            android:id="@+id/btn_update_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_9patchbutton"
+            android:onClick="onclick"
+            android:visibility="gone"
+            android:text="@string/update"
+            android:textColor="@color/gold" />
+    </LinearLayout>
+
+</LinearLayout>

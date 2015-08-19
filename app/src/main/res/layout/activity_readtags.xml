@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutAwidTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageViewAwid"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/awid_asia" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="@color/slategray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/countShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_tag"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/editTextTotalTagCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/zero"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/checkedTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checked_tag"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/editTextcheckedTagCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/zero"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/slategray"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/inventoryCheckedTagTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0">
+
+                <TableRow
+                    android:id="@+id/inventoryCheckedTagRow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dip"
+                        android:background="@color/darkgray"
+                        android:gravity="center_horizontal"
+                        android:text="@string/tag_id"
+                        android:textColor="@color/red"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dip"
+                        android:background="@color/darkgray"
+                        android:gravity="center_horizontal"
+                        android:text="@string/tag_state"
+                        android:textColor="@color/red"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="@color/slategray"/>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/ErrorTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/error_tag"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/editTextErrorTagCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/zero"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/slategray"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/inventoryErrorTagTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0">
+
+                <TableRow
+                    android:id="@+id/inventoryErrorRow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dip"
+                        android:background="@color/darkgray"
+                        android:gravity="center_horizontal"
+                        android:text="@string/tag_id"
+                        android:textColor="@color/red"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/slategray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/snow"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/btn_inventory_exist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_9patchbutton"
+            android:onClick="onclick"
+            android:text="@string/inventory"
+            android:textColor="@color/gold"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="@color/white" />
+
+    <corners android:radius="5px" />
+
+    <stroke
+        android:width="2px"
+        android:color="@color/greenyellow" />
+
+    <!--
+    gradient 對應顏色漸變。startcolor、endcolor就不多說了。 android:angle是指從哪個角度開始變。
+	solid  填充。
+	stroke  描邊。
+	corners  圓角。
+	padding 定義內容離邊界的距離。與android:padding_left、android:padding_right這些是一個道理。
+    -->
+
+</shape>
